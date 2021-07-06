@@ -138,7 +138,9 @@ public class OtpverifactionActivity extends AppCompatActivity {
                     sessionManager.setSessionID(authentication.getToken());
                     sessionManager.commit();
                     Intent nextpage= new Intent(OtpverifactionActivity.this,HomePageActivity.class);
+                    overridePendingTransition(R.anim.push_right_in,R.anim.push_right_out);
                     startActivity(nextpage);
+                    finish();
                 }
                 else
                 {

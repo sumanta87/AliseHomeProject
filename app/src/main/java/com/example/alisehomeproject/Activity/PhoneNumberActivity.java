@@ -124,6 +124,7 @@ public class PhoneNumberActivity extends AppCompatActivity {
                     SessionManager.getInstance(getApplicationContext());
                    Intent nextpage= new Intent(PhoneNumberActivity.this,OtpverifactionActivity.class);
                    nextpage.putExtra("phonenumber",number);
+                    overridePendingTransition(R.anim.push_right_in,R.anim.push_right_out);
                     startActivity(nextpage);
                 }
                 else

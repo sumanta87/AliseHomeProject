@@ -35,8 +35,26 @@ public class HomePageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
         BottomNavigationView navView = findViewById(R.id.bottomNav_view);
-        connect();
+        if (GlobalMethod.checkNetworkState(HomePageActivity.this))
+        {
+            connect();
+        }
+        else
+        {
+            GlobalMethod.showSettingsAlert(HomePageActivity.this);
+        }
+
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (!GlobalMethod.checkNetworkState(HomePageActivity.this))
+        {
+            GlobalMethod.showSettingsAlert(HomePageActivity.this);
+        }
+    }
+
     private void connect() {
 
         if (retrofit == null) {

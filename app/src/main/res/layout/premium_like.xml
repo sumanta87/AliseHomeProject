@@ -25,7 +25,7 @@
             android:layout_gravity="left|bottom"
             android:layout_marginStart="20dp"
             android:textStyle="bold"
-            android:layout_marginBottom="49dp"
+            android:layout_marginBottom="59dp"
             android:text="@string/namedata"
 
             android:textColor="#F2EEF3"
