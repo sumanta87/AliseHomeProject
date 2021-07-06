@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="180dp"
+        android:layout_height="260dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="160dp"
+            android:id="@+id/iv_profile"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/likeorofile"
+            app:riv_corner_radius="10dp" />
+
+        <com.example.alisehomeproject.Viewsmode.HighBoldTextView
+            android:id="@+id/tv_name_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="49dp"
+            android:text="@string/namedata"
+
+            android:textColor="#F2EEF3"
+            android:textSize="14sp" />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

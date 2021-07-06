@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/discoverFragment"
+        android:icon="@drawable/discover"
+        android:enabled="true"
+        android:state_checked="true"
+
+
+        android:title="@string/title_discover" />
+
+    <item
+        android:id="@+id/notes"
+        android:icon="@drawable/notes"
+        android:enabled="true"
+
+        android:title="@string/notes" />
+
+    <item
+        android:id="@+id/matchesFragment"
+        android:icon="@drawable/matches"
+        android:enabled="true"
+
+        android:title="@string/matches" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/profile"
+        android:enabled="true"
+
+        android:title="@string/Profile" />
+</menu>
